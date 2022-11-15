@@ -11,10 +11,11 @@ export class SecondPhotoEditorComponent implements OnInit {
   constructor(private http: HttpClient) {}
   imageChangeEvt: any = '';
   croppImgPriview: any = '';
+  file: any;
+
 
   ngOnInit(): void {}
 
-  file: any;
   onFileChange(e: any) {
     this.file = e.target.files[0];
     this.imageChangeEvt = e;
