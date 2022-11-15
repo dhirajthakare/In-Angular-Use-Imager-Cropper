@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { PhotoEditorComponent } from './photo-editor/photo-editor.component';
 
 import { ImageCropperModule }  from 'ngx-image-cropper';
-import { SecondPhotoEditorComponent } from './second-photo-editor/second-photo-editor.component'
+import { SecondPhotoEditorComponent } from './second-photo-editor/second-photo-editor.component';
+import { HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SecondPhotoEditorComponent } from './second-photo-editor/second-photo-e
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ImageCropperModule
+    ImageCropperModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,10 +11,10 @@
     
     <div style="float: left;" >
         <image-cropper 
+        style="height:300px;width:400px"
         [imageChangedEvent]="imageChangeEvt"
-        [aspectRatio]="4/4"
+        [aspectRatio]="4/3"
         [maintainAspectRatio]="true"
-        [resizeToWidth]="256"
         format="jpeg"
         (imageCropped) = "cropImg($event)"
         (imageLoaded)="imgLoad()"
